@@ -17,12 +17,11 @@ int main()
         temp=*(str+i);
         if(count[*(str+i)]==0)
         {
-            *(str+r)=*(str+ip);
-            r++;
+           *(str+r)=*(str+ip);
+           r++;
         }
         ip++;
     }
-    *(str+r) = '\0';
+   *(str+r) = '\0';
     printf("%s",str);
-
 }
