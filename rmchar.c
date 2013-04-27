@@ -25,11 +25,13 @@ char *removechar(char *str,char *rm)
 }
 int main()
 {
-    int i,ip=0,r=0;
+    int i=0,ip=0,r=0;
     char str[200],rm[10];
-    printf("Enter the String\n");
-    scanf("%s",str);
+    printf("Enter the String $ to stop\n");
+    for(str[i]=getchar();str[i]!='$';str[++i]=getchar());
+    str[i]='\0';
     printf("Enter character to remove\n");
     scanf("%s",rm);
     printf("%s",removechar(str,rm));
+    getch();
 }
