@@ -25,7 +25,7 @@ char *removechar(char *str,char *rm)
 }
 int main()
 {
-    int i=0,ip=0,r=0;
+    int i=0;
     char str[200],rm[10];
     printf("Enter the String $ to stop\n");
     for(str[i]=getchar();str[i]!='$';str[++i]=getchar());
